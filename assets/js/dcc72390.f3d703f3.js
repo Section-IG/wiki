@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwik_ig=self.webpackChunkwik_ig||[]).push([[634],{4601:function(a){a.exports=JSON.parse('{"allTagsPath":"/wiki/blog/tags","slug":"/wiki/blog/tags/facebook","name":"facebook","count":1,"permalink":"/wiki/blog/tags/facebook"}')}}]);
