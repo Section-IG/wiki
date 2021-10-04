@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'WikIG',
   tagline: 'The Wiki for the IG',
-  url: 'https://iesn-ig.github.io/wiki/',
-  baseUrl: '/',
+  url: 'https://iesn-ig.github.io',
+  baseUrl: '/wiki/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
