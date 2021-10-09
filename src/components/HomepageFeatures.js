@@ -4,32 +4,29 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Esse duis do eiusmod est veniam dolor labore nostrud.',
+    Svg: require('../../static/img/image_placeholder.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Labore laborum reprehenderit incididunt deserunt ipsum minim ea eiusmod ad qui exercitation nisi. Adipisicing voluptate in ad laborum ea consequat anim reprehenderit duis laborum ut amet. Sunt in laborum ut dolor ad cupidatat ad tempor irure Lorem. Exercitation culpa enim est aute ullamco dolor deserunt nostrud magna aliqua proident amet.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Ea ut reprehenderit mollit id reprehenderit quis labore.',
+    Svg: require('../../static/img/image_placeholder.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Deserunt eiusmod labore culpa dolor sint labore fugiat quis do amet minim anim velit. Commodo non sit nulla Lorem ex amet eu anim. Ullamco culpa et excepteur aute enim deserunt deserunt sit adipisicing pariatur enim pariatur duis. Lorem tempor qui deserunt consectetur culpa officia voluptate laboris est anim incididunt. Cupidatat occaecat ut tempor incididunt anim est magna eu sunt consectetur proident fugiat. Ut voluptate reprehenderit nulla laborum.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Aliquip in exercitation magna sit dolor sit consectetur.',
+    Svg: require('../../static/img/image_placeholder.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Sunt et pariatur non consequat. Excepteur consectetur reprehenderit quis laboris velit nisi cupidatat id ut ea culpa. Ut ullamco dolor eiusmod minim consequat aliquip dolor fugiat veniam adipisicing. Ea dolor commodo nostrud ut quis consequat cillum do nulla occaecat reprehenderit. Irure nulla voluptate ea labore laboris eiusmod deserunt aute deserunt dolore amet laboris. Est non incididunt veniam do amet aliqua et enim. Culpa magna deserunt labore nostrud do Lorem ipsum sint tempor magna sunt.
       </>
     ),
   },

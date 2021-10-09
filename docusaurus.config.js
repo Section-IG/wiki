@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'WikIG',
-  tagline: 'The Wiki for the IG',
+  tagline: 'Le Wiki de la section IG',
   url: 'https://iesn-ig.github.io',
   baseUrl: '/wiki/',
   onBrokenLinks: 'throw',
@@ -23,11 +23,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/iesn-ig/wiki/edit/main/docs/',
         },
-        blog: {
-          showReadingTime: true,
-          editUrl:
-            'https://github.com/iesn-ig/wiki/edit/main/website/blog/',
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -42,16 +38,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         title: 'WikIG',
         logo: {
           alt: 'WikIG Logo',
-          src: 'img/logo.svg',
+          src: 'img/image_placeholder.svg',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Articles',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/IESN-IG/wiki',
             label: 'GitHub',
@@ -63,29 +58,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
             title: 'Community',
             items: [
               {
                 label: 'Discord',
                 href: 'https://discord.gg/ighenallux',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
               },
               {
                 label: 'GitHub',
