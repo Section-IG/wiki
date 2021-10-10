@@ -21,7 +21,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/iesn-ig/wiki/edit/main/docs/',
+          editUrl: 'https://github.com/iesn-ig/wiki/edit/main/',
         },
         blog: false,
         theme: {
