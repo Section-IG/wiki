@@ -8,7 +8,9 @@
 	text-align: center;
 	position: relative;
 	overflow: hidden;
-	background: url('/img/image_placeholder.svg') repeat;
+	color: black;
+	background: center / 100% no-repeat
+		url('https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/best-hp-desktop-computers-for-college-students-2019-hero1560889203851620.jpg');
 }
 
 @media screen and (max-width: 966px) {
