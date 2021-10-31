@@ -8,12 +8,8 @@ const FeatureList = [
 		Svg: require('../../static/img/undraw_book_lover.svg').default,
 		description: (
 			<>
-				Mollit elit eiusmod duis voluptate adipisicing excepteur mollit laboris
-				tempor nulla. In et duis tempor duis dolor labore et cupidatat nulla
-				anim nisi commodo Lorem laboris. Excepteur do sunt cillum deserunt. Sint
-				in laboris commodo laboris commodo dolore nisi veniam. Dolore ea non
-				eiusmod sit nulla occaecat commodo elit. Esse dolor aliqua nisi non
-				velit eiusmod in laboris culpa.
+				Le contenu est vérifié par d'autres étudiants et validé par les
+				professeurs.
 			</>
 		),
 	},
@@ -22,12 +18,8 @@ const FeatureList = [
 		Svg: require('../../static/img/undraw_Developer_activity.svg').default,
 		description: (
 			<>
-				Mollit elit eiusmod duis voluptate adipisicing excepteur mollit laboris
-				tempor nulla. In et duis tempor duis dolor labore et cupidatat nulla
-				anim nisi commodo Lorem laboris. Excepteur do sunt cillum deserunt. Sint
-				in laboris commodo laboris commodo dolore nisi veniam. Dolore ea non
-				eiusmod sit nulla occaecat commodo elit. Esse dolor aliqua nisi non
-				velit eiusmod in laboris culpa.
+				Fournir des informations correctes, complètes et compréhensibles
+				est la priorité du projet.
 			</>
 		),
 	},
@@ -36,12 +28,9 @@ const FeatureList = [
 		Svg: require('../../static/img/undraw_Team_spirit.svg').default,
 		description: (
 			<>
-				Mollit elit eiusmod duis voluptate adipisicing excepteur mollit laboris
-				tempor nulla. In et duis tempor duis dolor labore et cupidatat nulla
-				anim nisi commodo Lorem laboris. Excepteur do sunt cillum deserunt. Sint
-				in laboris commodo laboris commodo dolore nisi veniam. Dolore ea non
-				eiusmod sit nulla occaecat commodo elit. Esse dolor aliqua nisi non
-				velit eiusmod in laboris culpa.
+				Ce wiki est écrit par les étudiants pour les étudiants. Que tu
+				sois en première, seconde ou dernière année, participe et aide
+				tes camarades!
 			</>
 		),
 	},
