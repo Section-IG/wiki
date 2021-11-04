@@ -1,21 +1,28 @@
 import React from 'react';
 import clsx from 'clsx';
-import { ReactTinyLink } from 'react-tiny-link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
+import resources from '.';
 import styles from './index.module.css';
-import { resources } from './resources.json';
 
 function ResourceItem({ id, url, title, description, tags }) {
 	return (
 		<div className={clsx('card', styles.resourceCard)} key={id}>
 			<div className='card__image'>
 				<div className={styles.allCardImage}>
-					<ReactTinyLink
-						showGraphic={true}
-						url={url}
-						cardSize='small'
-						proxyUrl='https://cors.team-radiateur.fun:6443'
-					/>
+					<BrowserOnly fallback={<div>Cannot be loaded with SSR.</div>}>
+						{() => {
+							const { ReactTinyLink } = require('react-tiny-link');
+							return (
+								<ReactTinyLink
+									showGraphic={true}
+									url={url}
+									cardSize='small'
+									proxyUrl='https://cors.team-radiateur.fun:6443'
+								/>
+							);
+						}}
+					</BrowserOnly>
 				</div>
 			</div>
 			<div className='card__body'>

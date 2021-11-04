@@ -13,9 +13,9 @@ function ResourceHeader() {
 			</p>
 			<p>
 				<a
-					className={'button button--primary'}
+					className='button button--primary'
 					href='https://github.com/section-ig/wiki/edit/main/src/components/Resources/resources.json'
-					target={'_blank'}
+					target='_blank'
 				>
 					🙏 Ajoute une ressource maintenant!
 				</a>
