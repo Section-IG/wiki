@@ -1,0 +1,9 @@
+.resourceCard {
+	height: 100%;
+}
+
+.allCardImage {
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
