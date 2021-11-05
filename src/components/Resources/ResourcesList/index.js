@@ -32,55 +32,57 @@ function ResourceCardTagIcons(resource) {
 
 function ResourceItem({ id, url, title, description, tags }) {
 	return (
-		<div className={clsx('card', styles.resourceCard)} key={id}>
-			<div className='card__image'>
-				<div className={styles.allCardImage}>
-					<BrowserOnly fallback={<div>Cannot be loaded with SSR.</div>}>
-						{() => {
-							const { ReactTinyLink } = require('react-tiny-link');
-							return (
-								<ReactTinyLink
-									showGraphic={true}
-									url={url}
-									cardSize='small'
-									proxyUrl='https://cors.team-radiateur.fun:6443'
-								/>
-							);
-						}}
-					</BrowserOnly>
+		<div className='col col--4 margin-bottom--lg'>
+			<div className={clsx('card', styles.resourceCard)} key={id}>
+				<div className='card__image'>
+					<div className={styles.allCardImage}>
+						<BrowserOnly fallback={<div>Cannot be loaded with SSR.</div>}>
+							{() => {
+								const { ReactTinyLink } = require('react-tiny-link');
+								return (
+									<ReactTinyLink
+										showGraphic={true}
+										url={url}
+										cardSize='small'
+										proxyUrl='https://cors.team-radiateur.fun:6443'
+									/>
+								);
+							}}
+						</BrowserOnly>
+					</div>
 				</div>
-			</div>
-			<div className='card__body'>
-				{(title || description) && (
-					<div className='avatar'>
-						<div className='avatar__intro margin-left--none'>
-							<div className={styles.titleIconsRow}>
-								<div className={styles.titleIconsRowTitle}>
-									{title && <h4 className='avatar__name'>{title}</h4>}
-								</div>
-								{tags && tags.length > 0 && (
-									<div className={styles.titleIconsRowIcons}>
-										<ResourceCardTagIcons tags={tags} />
+				<div className='card__body'>
+					{(title || description) && (
+						<div className='avatar'>
+							<div className='avatar__intro margin-left--none'>
+								<div className={styles.titleIconsRow}>
+									<div className={styles.titleIconsRowTitle}>
+										{title && <h4 className='avatar__name'>{title}</h4>}
 									</div>
+									{tags && tags.length > 0 && (
+										<div className={styles.titleIconsRowIcons}>
+											<ResourceCardTagIcons tags={tags} />
+										</div>
+									)}
+								</div>
+								{description && (
+									<small className='avatar__subtitle'>{description}</small>
 								)}
 							</div>
-							{description && (
-								<small className='avatar__subtitle'>{description}</small>
-							)}
 						</div>
+					)}
+				</div>
+				<div className='card__footer'>
+					<div className='button-group button-group--block'>
+						<a
+							className='button button--small button--secondary button--block'
+							href={url}
+							target='_blank'
+							rel='noreferrer noopener'
+						>
+							Ouvrir le lien
+						</a>
 					</div>
-				)}
-			</div>
-			<div className='card__footer'>
-				<div className='button-group button-group--block'>
-					<a
-						className='button button--small button--secondary button--block'
-						href={url}
-						target='_blank'
-						rel='noreferrer noopener'
-					>
-						Ouvrir le lien
-					</a>
 				</div>
 			</div>
 		</div>
