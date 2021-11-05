@@ -1,6 +1,4 @@
-import React from 'react';
-
-export const tagList = [
+const tagList = [
 	'opensource',
 	'frontend',
 	'backend',
@@ -14,65 +12,65 @@ export const tagList = [
 	'cloud',
 ];
 
-export const tags = {
+const tags = {
 	opensource: {
 		label: 'Open-Source',
 		description: 'Projets Open-Source',
-		icon: <>👨‍💻</>,
+		icon: '👨‍💻',
 	},
 	frontend: {
 		label: 'Front-End',
 		description: 'Affilié au développement front',
-		icon: <>💄</>,
+		icon: '💄',
 	},
 	backend: {
 		label: 'Back-End',
 		description: 'Affilié au développement back',
-		icon: <>🕵️‍♂️</>,
+		icon: '🕵️‍♂️',
 	},
 	web: {
 		label: 'Web',
 		description: 'Affilié au Web en général',
-		icon: <>🌏</>,
+		icon: '🌏',
 	},
 	mobile: {
 		label: 'Mobile',
 		description: 'Affilié au Mobile en général',
-		icon: <>📱</>,
+		icon: '📱',
 	},
 	plugin: {
 		label: 'Plugin',
 		description: 'Affilié à des extensions ou plugins',
-		icon: <>🧩</>,
+		icon: '🧩',
 	},
 	outil: {
 		label: 'Outil',
 		description: 'Affilié à des outils divers améliorant la productivité',
-		icon: <>🔧</>,
+		icon: '🔧',
 	},
 	documentation: {
 		label: 'Documentation',
 		description: 'Affilié à de la documentation en général',
-		icon: <>📚</>,
+		icon: '📚',
 	},
 	framework: {
 		label: 'Framework',
 		description: 'Affilié à des gros projets appelés "frameworks"',
-		icon: <>🌀</>,
+		icon: '🌀',
 	},
 	librairie: {
 		label: 'Librairie',
 		description: 'Affilié à des petits projets appelés "librairies de code"',
-		icon: <>🏛️</>,
+		icon: '🏛️',
 	},
 	cloud: {
 		label: 'Cloud',
 		description: 'Affilié au Cloud en général',
-		icon: <>☁</>,
+		icon: '☁',
 	},
 };
 
-export const resources = [
+const resources = [
 	{
 		title: 'Coolors',
 		description:
@@ -277,3 +275,5 @@ export const resources = [
 		url: 'https://iesn.thibaultclaude.be/',
 	},
 ];
+
+export { tagList, tags, resources };

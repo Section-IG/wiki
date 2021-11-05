@@ -2,9 +2,9 @@ import React from 'react';
 import clsx from 'clsx';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-import { tags, tagList } from '../../../pages/ressources/resources';
-import styles from './index.module.css';
+import { tagList, tags } from '../../../pages/ressources/resources';
 import { sortBy } from '../../../utils';
+import styles from './index.module.css';
 
 function TagIcon({ label, description, icon }) {
 	return (
@@ -15,7 +15,7 @@ function TagIcon({ label, description, icon }) {
 }
 
 function ResourceCardTagIcons(resource) {
-	const tagObjects = resource.tags
+	let tagObjects = resource.tags
 		.map((tag) => ({ tag, ...tags[tag] }))
 		.filter((tagObject) => !!tagObject.icon);
 	const sortedTagObjects = sortBy(tagObjects, (tagObject) =>
@@ -71,11 +71,23 @@ function ResourceItem({ id, url, title, description, tags }) {
 					</div>
 				)}
 			</div>
+			<div className='card__footer'>
+				<div className='button-group button-group--block'>
+					<a
+						className='button button--small button--secondary button--block'
+						href={url}
+						target='_blank'
+						rel='noreferrer noopener'
+					>
+						Ouvrir le lien
+					</a>
+				</div>
+			</div>
 		</div>
 	);
 }
 
-export default function Resources({ resources }) {
+export default function ResourcesList({ resources }) {
 	return (
 		<div className='margin-top--l margin-bottom--md container'>
 			<div className='row'>

@@ -6,11 +6,11 @@ import { useHistory, useLocation } from '@docusaurus/router';
 
 import { sortBy, toggleListItem } from '../../utils';
 import { tagList, tags, resources } from './resources';
-import Resources from '../../components/Resources/Resources';
+import ResourcesList from '../../components/Resources/ResourcesList';
 import ResourcesSelect from '../../components/Resources/ResourcesSelect';
 import ResourcesCheckbox from '../../components/Resources/ResourcesCheckbox';
 
-const operators = ['OR', 'AND'];
+const Operators = ['OR', 'AND'];
 
 function filterResources(resources, selectedTags = [], operator = 'OR') {
 	if (selectedTags.length === 0) return resources;
@@ -129,7 +129,7 @@ function ResourcesFilters({ selectedTags, toggleTag, operator, setOperator }) {
 						value={operator}
 						onChange={(e) => setOperator(e.target.value)}
 					>
-						{operators.map((op) => (
+						{Operators.map((op) => (
 							<option key={op} value={op}>
 								{op}
 							</option>
@@ -164,7 +164,7 @@ export default function RessourcesPage() {
 					operator={operator}
 					setOperator={setOperator}
 				/>
-				<Resources resources={filteredResources} />
+				<ResourcesList resources={filteredResources} />
 			</main>
 		</Layout>
 	);
