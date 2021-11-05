@@ -87,7 +87,7 @@ function ResourceHeader() {
 			<p>
 				<a
 					className='button button--primary'
-					href='https://github.com/section-ig/wiki/edit/main/src/components/Resources/resources.json'
+					href='https://github.com/section-ig/wiki/edit/main/src/data/resources.js'
 					target='_blank'
 				>
 					🙏 Ajoute une ressource maintenant!
