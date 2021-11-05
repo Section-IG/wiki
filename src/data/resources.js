@@ -1,76 +1,4 @@
-const tagList = [
-	'opensource',
-	'frontend',
-	'backend',
-	'web',
-	'mobile',
-	'plugin',
-	'outil',
-	'documentation',
-	'framework',
-	'librairie',
-	'cloud',
-];
-
-const tags = {
-	opensource: {
-		label: 'Open-Source',
-		description: 'Projets Open-Source',
-		icon: '👨‍💻',
-	},
-	frontend: {
-		label: 'Front-End',
-		description: 'Affilié au développement front',
-		icon: '💄',
-	},
-	backend: {
-		label: 'Back-End',
-		description: 'Affilié au développement back',
-		icon: '🕵️‍♂️',
-	},
-	web: {
-		label: 'Web',
-		description: 'Affilié au Web en général',
-		icon: '🌏',
-	},
-	mobile: {
-		label: 'Mobile',
-		description: 'Affilié au Mobile en général',
-		icon: '📱',
-	},
-	plugin: {
-		label: 'Plugin',
-		description: 'Affilié à des extensions ou plugins',
-		icon: '🧩',
-	},
-	outil: {
-		label: 'Outil',
-		description: 'Affilié à des outils divers améliorant la productivité',
-		icon: '🔧',
-	},
-	documentation: {
-		label: 'Documentation',
-		description: 'Affilié à de la documentation en général',
-		icon: '📚',
-	},
-	framework: {
-		label: 'Framework',
-		description: 'Affilié à des gros projets appelés "frameworks"',
-		icon: '🌀',
-	},
-	librairie: {
-		label: 'Librairie',
-		description: 'Affilié à des petits projets appelés "librairies de code"',
-		icon: '🏛️',
-	},
-	cloud: {
-		label: 'Cloud',
-		description: 'Affilié au Cloud en général',
-		icon: '☁',
-	},
-};
-
-const resources = [
+export const resources = [
 	{
 		title: 'Coolors',
 		description:
@@ -276,4 +204,74 @@ const resources = [
 	},
 ];
 
-export { tagList, tags, resources };
+export const tagList = [
+	'opensource',
+	'frontend',
+	'backend',
+	'web',
+	'mobile',
+	'plugin',
+	'outil',
+	'documentation',
+	'framework',
+	'librairie',
+	'cloud',
+];
+
+export const tags = {
+	opensource: {
+		label: 'Open-Source',
+		description: 'Projets Open-Source',
+		icon: '👨‍💻',
+	},
+	frontend: {
+		label: 'Front-End',
+		description: 'Affilié au développement front',
+		icon: '💄',
+	},
+	backend: {
+		label: 'Back-End',
+		description: 'Affilié au développement back',
+		icon: '🕵️‍♂️',
+	},
+	web: {
+		label: 'Web',
+		description: 'Affilié au Web en général',
+		icon: '🌏',
+	},
+	mobile: {
+		label: 'Mobile',
+		description: 'Affilié au Mobile en général',
+		icon: '📱',
+	},
+	plugin: {
+		label: 'Plugin',
+		description: 'Affilié à des extensions ou plugins',
+		icon: '🧩',
+	},
+	outil: {
+		label: 'Outil',
+		description: 'Affilié à des outils divers améliorant la productivité',
+		icon: '🔧',
+	},
+	documentation: {
+		label: 'Documentation',
+		description: 'Affilié à de la documentation en général',
+		icon: '📚',
+	},
+	framework: {
+		label: 'Framework',
+		description: 'Affilié à des gros projets appelés "frameworks"',
+		icon: '🌀',
+	},
+	librairie: {
+		label: 'Librairie',
+		description: 'Affilié à des petits projets appelés "librairies de code"',
+		icon: '🏛️',
+	},
+	cloud: {
+		label: 'Cloud',
+		description: 'Affilié au Cloud en général',
+		icon: '☁',
+	},
+};

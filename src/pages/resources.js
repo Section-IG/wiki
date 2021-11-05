@@ -5,10 +5,14 @@ import Layout from '@theme/Layout';
 import { useHistory, useLocation } from '@docusaurus/router';
 
 import { sortBy, toggleListItem } from '../../utils';
-import { tagList, tags, resources } from './resources';
+import { tagList, tags, resources } from '../../data/resources';
 import ResourcesList from '../../components/Resources/ResourcesList';
 import ResourcesSelect from '../../components/Resources/ResourcesSelect';
 import ResourcesCheckbox from '../../components/Resources/ResourcesCheckbox';
+
+const TITLE = 'Des ressources intéressantes';
+const DESCRIPTION =
+	'Une liste de ressources assemblées par les étudiants, alumnis et professeurs';
 
 const Operators = ['OR', 'AND'];
 
@@ -78,11 +82,8 @@ function useSelectedTags() {
 function ResourceHeader() {
 	return (
 		<div className='text--center'>
-			<h1>Des ressources intéressantes</h1>
-			<p>
-				Une liste de ressources assemblées par les étudiants, alumnis et
-				professeurs
-			</p>
+			<h1>{TITLE}</h1>
+			<p>{DESCRIPTION}</p>
 			<p>
 				<a
 					className='button button--primary'
@@ -155,7 +156,7 @@ export default function RessourcesPage() {
 	);
 
 	return (
-		<Layout>
+		<Layout title={TITLE} description={DESCRIPTION}>
 			<main className='container margin-vert--lg'>
 				<ResourceHeader />
 				<ResourcesFilters

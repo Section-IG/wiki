@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-import { tagList, tags } from '../../../pages/ressources/resources';
+import { tagList, tags } from '../../../data/resources';
 import { sortBy } from '../../../utils';
 import styles from './index.module.css';
 
@@ -89,14 +89,23 @@ function ResourceItem({ id, url, title, description, tags }) {
 
 export default function ResourcesList({ resources }) {
 	return (
-		<div className='margin-top--l margin-bottom--md container'>
-			<div className='row'>
-				{resources.map((resource, index) => (
-					<div className='col col--4 margin-bottom--lg' key={index}>
-						<ResourceItem {...resource} />
+		<section className='container margin-top--lg'>
+			<h2>
+				{resources.length} ressource{resources.length > 1 ? 's' : ''}
+			</h2>
+			<div className='margin-top--lg'>
+				{resources.length > 0 ? (
+					<div className='row'>
+						{resources.map((resource, index) => (
+							<ResourceItem key={index} {...resource} />
+						))}
 					</div>
-				))}
+				) : (
+					<div className='padding-vert--md text--center'>
+						<h3>Aucun résultat</h3>
+					</div>
+				)}
 			</div>
-		</div>
+		</section>
 	);
 }
