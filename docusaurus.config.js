@@ -49,6 +49,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 							label: 'Articles',
 						},
 						{
+							to: 'resources',
+							label: 'Ressources',
+							position: 'left',
+						},
+						{
 							href: 'https://github.com/IESN-IG/wiki',
 							label: 'GitHub',
 							position: 'right',

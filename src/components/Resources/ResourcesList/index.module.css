@@ -1,0 +1,29 @@
+.resourceCard {
+	height: 100%;
+}
+
+.allCardImage {
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.titleIconsRow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.titleIconsRowTitle {
+	flex: 1;
+}
+
+.titleIconsRowIcons {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.tagIcon {
+	margin: 0.2rem;
+	user-select: none;
+}

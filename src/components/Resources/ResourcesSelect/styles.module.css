@@ -1,0 +1,5 @@
+.selectContainer {
+	display: inline;
+	padding: 5px;
+	user-select: none;
+}

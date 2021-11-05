@@ -1,0 +1,15 @@
+.checkboxContainer {
+	display: inline;
+	padding: 5px;
+	user-select: none;
+}
+
+.checkboxContainer,
+.checkboxContainer > * {
+	cursor: pointer;
+}
+
+.checkboxContainer label {
+	margin-left: 0.5rem;
+	text-overflow: ellipsis;
+}
