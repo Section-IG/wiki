@@ -1,4 +1,5 @@
 [![GitHub Pages](https://github.com/Section-IG/wiki/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Section-IG/wiki/actions/workflows/deploy.yml)
+[![GitHub](https://img.shields.io/github/license/section-ig/wiki)](https://github.com/Section-IG/wiki/blob/main/LICENSE)
 
 # Website WikIG
 
