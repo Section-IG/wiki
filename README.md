@@ -1,3 +1,5 @@
+[![GitHub Pages](https://github.com/Section-IG/wiki/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Section-IG/wiki/actions/workflows/deploy.yml)
+
 # Website WikIG
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
