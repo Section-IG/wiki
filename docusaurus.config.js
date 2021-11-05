@@ -49,7 +49,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 							label: 'Articles',
 						},
 						{
-							to: 'ressources',
+							to: 'resources',
 							label: 'Ressources',
 							position: 'left',
 						},

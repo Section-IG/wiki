@@ -4,11 +4,11 @@ import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import { useHistory, useLocation } from '@docusaurus/router';
 
-import { sortBy, toggleListItem } from '../../utils';
-import { tagList, tags, resources } from '../../data/resources';
-import ResourcesList from '../../components/Resources/ResourcesList';
-import ResourcesSelect from '../../components/Resources/ResourcesSelect';
-import ResourcesCheckbox from '../../components/Resources/ResourcesCheckbox';
+import { sortBy, toggleListItem } from '../utils';
+import { tagList, tags, resources } from '../data/resources';
+import ResourcesList from '../components/Resources/ResourcesList';
+import ResourcesSelect from '../components/Resources/ResourcesSelect';
+import ResourcesCheckbox from '../components/Resources/ResourcesCheckbox';
 
 const TITLE = 'Des ressources intéressantes';
 const DESCRIPTION =
