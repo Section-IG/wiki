@@ -1,0 +1,42 @@
+---
+sidebar_position: 1
+title: Formater son texte
+---
+
+import Image from '../../../src/components/Image';
+import RocketList from '../../../src/components/RocketList';
+
+Discord permet de mettre son texte en forme à l'aide de [la syntaxe Markdown](https://www.markdownguide.org/).
+
+:::note
+Si tu veux en apprendre plus sur Discord, je t'invite à consulter [leurs tutoriels](https://support.discordapp.com/hc/fr/categories/115000217151).
+:::
+
+Tu trouveras ci-dessous un récapitulatif sous forme de tableau des différents symboles utilisables dans Discord afin de mettre en forme tes messages! 😉
+
+| Format                                  | Symbole               | Exemple                                                                                      | Résultat                                                                                                                                                 |
+| --------------------------------------- | --------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Italique                                | \*                    | \*italique\*                                                                                 | _italique_                                                                                                                                               |
+| Gras                                    | \*\*                  | \*\*gras\*\*                                                                                 | **gras**                                                                                                                                                 |
+| Barré                                   | \~\~                  | \~\~barré\~\~                                                                                | ~~barré~~                                                                                                                                                |
+| Souligné                                | \_\_                  | \_\_souligné\_\_                                                                             | <span className="underline">souligné</span>                                                                                                              |
+| Spoiler                                 | \|\|                  | <Image src="/img/discord/spoiler.png" alt="Spoiler" />                                       | Fermé: <Image src="/img/discord/spoiler-closed.png" alt="Closed Spoiler" /> Ouvert: <Image src="/img/discord/spoiler-opened.png" alt="Opened Spoiler" /> |
+| Ligne de citation                       | \>                    | \> citation                                                                                  | <Image src="/img/discord/inline-citation.png" alt="Inline Citation" />                                                                                   |
+| Ligne de code                           | \`                    | <Image src="/img/discord/code.png" alt="Inline code" />                                      | <Image src="/img/discord/code-result.png" alt="Inline code" />                                                                                           |
+| Bloc de code                            | \`\`\`                | <Image src="/img/discord/code-block.png" alt="code Block" />                                 | <Image src="/img/discord/code-block-result.png" alt="code Block" />                                                                                      |
+| Bloc de code avec coloration syntaxique | \`\`\`&lt;langage&gt; | <Image src="/img/discord/colored-code-block.png" alt="code Block with Semantic Highlight" /> | <Image src="/img/discord/colored-code-block-result.png" alt="code Block with Semantic Highlight" />                                                      |
+
+Tu peux trouver une liste complète des langages supportés par Discord sur [highlightjs.org](https://highlightjs.org/static/demo/). Personnellement, j'utilise souvent ces deux "codes de langage" dans mes blocs de code :
+
+<RocketList>
+	<li>
+		<code>csharp</code> pour <span>C#</span>
+	</li>
+	<li>
+		<code>js</code> ou <code>javascript</code> pour <span>JavaScript</span>
+	</li>
+</RocketList>
+
+:::tip
+Au fait! Tu peux combiner les différents symboles afin d'obtenir un texte avec plusieurs styles : **_texte gras italique_**.
+:::

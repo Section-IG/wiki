@@ -1,0 +1,16 @@
+.grid {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	column-gap: 5px;
+	row-gap: 5px;
+
+	align-items: center;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 900px) {
+	.grid {
+		flex-direction: column;
+	}
+}

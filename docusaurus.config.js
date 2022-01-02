@@ -15,6 +15,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 		organizationName: 'iesn-ig', // Usually your GitHub org/user name.
 		projectName: 'wiki', // Usually your repo name.
 
+		plugins: ['@docusaurus/plugin-ideal-image'],
 		presets: [
 			[
 				'@docusaurus/preset-classic',
