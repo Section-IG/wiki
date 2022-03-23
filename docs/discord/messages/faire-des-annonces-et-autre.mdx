@@ -1,0 +1,83 @@
+---
+sidebar_position: 2
+title: Les mentions dans Discord
+---
+
+import Image from '../../../src/components/Image';
+import {
+    DiscordMessage,
+    DiscordMessages,
+    DiscordMention
+} from '@skyra/discord-components-react';
+
+Outre son incroyable capacité de formatage de texte empruntée à Markdown, l'une des caractéristiques très utile avec Discord, c'est que tu peux créer un hyper-lien vers pratiquement n'importe quoi.
+Étroitement liée avec la page de documentation sur les [identifiants](/docs/discord/plus-loin/les-identifiants), la lecture de ce chapitre te permettra de comprendre comment fonctionne une petite partie de l'application.
+
+## Les canaux
+
+Imagine que tu veux rediriger quelqu'un vers un canal spécifique mais que le serveur où tu te trouves comporte un énorme nombre de canaux.
+Pas facile de retrouver le canal sur base d'un simple nom. Discord a mis en place un système d'hyper-lien qui te permet, quand tu notes un message, de transformer le nom d'un canal en un hyper-lien.
+
+Rien de plus simple : il suffit d'écrire `#` suivi du nom du canal. Tu peux même choisir un canal parmi ceux proposés dans la liste.
+
+<DiscordMessages>
+    <DiscordMessage
+        author='HunteRoi'
+        avatar='https://media.discordapp.net/attachments/622823610905657375/955445785871392828/5407f1edadb857875b233270a1567ee3.png'
+    >
+        <DiscordMention type='channel'>informations</DiscordMention>
+    </DiscordMessage>
+</DiscordMessages>
+
+[Voir en GIF](/img/discord/channel-mention.gif)
+
+## Les utilisateurs et les rôles
+
+Pour créer un hyper-lien vers un utilisateur ou même un rôle, c'est une syntaxe identique qui est en place : un `@` suivi du nom de l'utilisateur/du rôle.
+
+<DiscordMessages>
+    <DiscordMessage
+        author='HunteRoi'
+        avatar='https://media.discordapp.net/attachments/622823610905657375/955445785871392828/5407f1edadb857875b233270a1567ee3.png'
+        highlight
+    >
+        <DiscordMention type='user'>HunteRoi</DiscordMention> (utilisateur)
+    </DiscordMessage>
+    <DiscordMessage
+        author='HunteRoi'
+        avatar='https://media.discordapp.net/attachments/622823610905657375/955445785871392828/5407f1edadb857875b233270a1567ee3.png'
+    >
+        <DiscordMention type='user'>EverKill</DiscordMention> (utilisateur)
+    </DiscordMessage>
+    <DiscordMessage
+        author='HunteRoi'
+        avatar='https://media.discordapp.net/attachments/622823610905657375/955445785871392828/5407f1edadb857875b233270a1567ee3.png'
+    >
+        <DiscordMention type='role'>Modérateur</DiscordMention> (rôle)
+    </DiscordMessage>
+</DiscordMessages>
+
+[Voir en GIF (user)](/img/discord/user-mention.gif) • [Voir en GIF (role)](/img/discord/role-mention.gif)
+
+:::warning Attention!
+Un hyper-lien vers un utilisateur ou un rôle se nomme "une mention" et envoie une notification à la ou aux personnes concernées. Utilise cela avec parcimonie!
+:::
+
+Discord possède également 2 rôles spéciaux : "here" et "everyone". Le premier permet de mentionner _tous les utilisateurs **en ligne**_ et ayant accès au canal écrit dans lequel tu l'envoies. Le second permet de mentionner _tous les utilisateurs_ qui ont accès au canal écrit.
+
+<DiscordMessages>
+    <DiscordMessage
+        author='HunteRoi'
+        avatar='https://media.discordapp.net/attachments/622823610905657375/955445785871392828/5407f1edadb857875b233270a1567ee3.png'
+        highlight
+    >
+        <DiscordMention type='user'>everyone</DiscordMention> (rôle spécial)
+    </DiscordMessage>
+    <DiscordMessage
+        author='HunteRoi'
+        avatar='https://media.discordapp.net/attachments/622823610905657375/955445785871392828/5407f1edadb857875b233270a1567ee3.png'
+        highlight
+    >
+        <DiscordMention type='role'>here</DiscordMention> (rôle spécial)
+    </DiscordMessage>
+</DiscordMessages>
