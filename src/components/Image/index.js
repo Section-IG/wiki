@@ -8,8 +8,10 @@ export default function Img({ alt, src, className }) {
 		className = styles.centeredImage;
 	}
 	
-	if (!src.startsWith("/")) src = `/${src}`;
-	if (!src.startsWith("/wiki")) src = `/wiki${src}`;
+	if (!src.startsWith("http")) {
+		if (!src.startsWith("/")) src = `/${src}`;
+		if (!src.startsWith("/wiki")) src = `/wiki${src}`;
+	}
 
 	return <Image className={className} img={src} alt={alt} />;
 }
