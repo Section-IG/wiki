@@ -1,12 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 title: Les intégrations
 ---
 
 import Image from '../../../src/components/Image';
 import RocketList from '../../../src/components/RocketList';
 
-Tu l'as sans doute remarqué quand tu postes un lien sur Discord, ou alors quand tu envoies un message contenant une image mais l'entité `message` est composée d'[énormément de choses décrites dans la documentation](https://discordapp.com/developers/docs/resources/channel#message-object). Retenons de cette liste quelques éléments importants :
+Tu l'as sans doute remarqué quand tu postes un lien sur Discord, ou alors quand tu envoies un message contenant une image mais l'entité `message` est composée d'[énormément de choses décrites dans la documentation](https://discord.com/developers/docs/resources/channel#message-object). Retenons de cette liste quelques éléments importants :
 
 <RocketList>
     <li>un identifiant</li>
@@ -24,25 +24,25 @@ Tu l'as sans doute remarqué quand tu postes un lien sur Discord, ou alors quand
 
 > Du verbe anglais "to embed" qui signifie "intégrer", un embed est une intégration visuelle sur un site web, une application, un IRC, etc. Tu l'utilises dans la vie de tous les jours quand, par exemple, tu partages un lien YouTube ou une page du journal de ton école sur Twitter, Facebook ou autre!
 
-Une intégration (un embed), c'est également une entité générée par Discord et qui permet de mettre en avant des ressources de manière plus interactive. En effet, lorsque tu postes un lien YouTube par exemple, une intégration est automatiquement créé afin de pouvoir jouer la vidéo YouTube _depuis l'application Discord_ (sans ouvrir ton navigateur). Elle est _intégrée_ à Discord. Voici la page de la documentation officielle : https://discordapp.com/developers/docs/resources/channel#embed-object.
+Une intégration (un embed), c'est également une entité générée par Discord et qui permet de mettre en avant des ressources de manière plus interactive. En effet, lorsque tu postes un lien YouTube par exemple, une intégration est automatiquement créé afin de pouvoir jouer la vidéo YouTube _depuis l'application Discord_ (sans ouvrir ton navigateur). Elle est _intégrée_ à Discord. Voici la page de la documentation officielle : https://discord.com/developers/docs/resources/channel#embed-object.
 
 ## Les limitations
 
 :::note
-Comme toute entité, une intégration est également soumise à des limites. Ces dernières [sont décrites dans la documentation en ligne](https://discordapp.com/developers/docs/resources/channel#embed-limits).
+Comme toute entité, une intégration est également soumise à des limites. Ces dernières [sont décrites dans la documentation en ligne](https://discord.com/developers/docs/resources/channel#embed-limits).
 :::
 
 Outre les limitations de contenu, Discord bloque l'utilisation de certains champs.
 
 <Image
-    src='https://images-ext-1.discordapp.net/external/7PBH4eRp1AItUJtYBvtDIbhZ7w9te_Z_aCTKOGN1BaI/https/i.imgur.com/5KeHUgW.png'
+    src='https://i.imgur.com/5KeHUgW.png'
     alt="Protected embed's fields"
 />
 
 Ces bloquages permettent ainsi à Discord de s'assurer le monopole sur la création de certaines intégrations spécifiques, par exemple celles comprenant des vidéos:
 
 <Image
-    src='https://cdn.discordapp.com/attachments/497053863707148302/497098013903159316/embed-properties2.png'
+    src='/img/discord/embed-properties2.png'
     alt='YouTube embedded in Discord'
 />
 
@@ -51,123 +51,23 @@ Ces bloquages permettent ainsi à Discord de s'assurer le monopole sur la créat
 Une intégration soit formée de beaucoup d'éléments. Il est donc important de comprendre sa structure JSON afin de comprendre à quel élément affiché correspond chaque paire clé-valeur.
 
 <Image
-    src='https://media.discordapp.net/attachments/497053863707148302/497098157839351808/embed-structure.png'
+    src='/img/discord/embed-properties.png'
     alt='Embed Structure'
 />
 
-Voici une image et sa légende, expliquant ainsi la structure visuelle d'une intégration Discord :
-
-<Image
-    src='https://media.discordapp.net/attachments/497053863707148302/497098326987243535/embed-full-structure.png'
-    alt='Explained Embed Structure'
-/>
-
-<ol>
-    <li>
-        <span>
-            <samp>author</samp>, le champ "auteur" composé de:
-        </span>
-        <ul>
-            <li>
-                <samp>name</samp>, le nom de l'auteur
-            </li>
-            <li>
-                <samp>url</samp>, l'URL à ouvrir en cas de clic
-            </li>
-            <li>
-                <samp>icon_url</samp>, l'URL de l'icône
-            </li>
-        </ul>
-    </li>
-    <li>
-        <span>
-            <samp>thumbnail</samp>, le champ "image" affiché comme vignette en
-            haut à droite composé de:
-        </span>
-        <ul>
-            <li>
-                <samp>url</samp>, le lien vers cette image (automatiquement
-                redimensionnée)
-            </li>
-        </ul>
-    </li>
-    <li>
-        <span>deux champs étroitement liés:</span>
-        <ul>
-            <li>
-                <samp>title</samp>, le titre
-            </li>
-            <li>
-                <samp>url</samp>, l'URL à ouvrir en cas de clic sur le titre
-            </li>
-        </ul>
-    </li>
-    <li>
-        <samp>description</samp>, le contenu de l'intégration
-    </li>
-    <li>
-        <span>
-            <samp>fields</samp>, le contenu le plus intéressants : les champs.
-            Ils sont tous composés ainsi:
-        </span>
-        <ul>
-            <li>
-                <samp>name</samp>, le nom du champ
-            </li>
-            <li>
-                <samp>value</samp>, le contenu du champ
-            </li>
-            <li>
-                <samp>inline</samp>, un booléen qui le contenu doit être aligné
-                quand c'est possible (comme les champs 4 et 5)
-            </li>
-        </ul>
-    </li>
-    <li>
-        <span>
-            <samp>image</samp>, le champ "image" affiché en dessous des champs
-            de l'intégration et composé de:
-        </span>
-        <ul>
-            <li>
-                <samp>url</samp>, le lien vers cette image (automatiquement
-                redimensionnée)
-            </li>
-        </ul>
-    </li>
-    <li>
-        <span>le bas de page étroitement liés à 2 paires:</span>
-        <ul>
-            <li>
-                <span>
-                    <samp>footer</samp>, le bas de page lui-même composé de:
-                </span>
-                <ul>
-                    <li>
-                        <samp>icon_url</samp>, l'URL de l'icône
-                    </li>
-                    <li>
-                        <samp>text</samp>, le texte affiché à droite de l'icône
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <samp>timestamp</samp>, l'horodatage en format ISO8601
-            </li>
-        </ul>
-    </li>
-    <li>le code couleur en base 16</li>
-</ol>
+Nous conseillons fortement de se rendre sur le [Discord Embed Builder](https://autocode.com/tools/discord/embed-builder/) et de jouer avec les différents champs afin de comprendre leur fonctionnement.
 
 :::tip
-Si tu as ton code couleur en hexadécimal, nous te conseillons d'utiliser `parseInt` du langage JavaScript pour le mettre en base 10 avant de l'utiliser dans ton intégration.
+Tu peux te rendre sur [color-hex](https://www.color-hex.com/) et choisir une couleur depuis leur site web!
+Ajoute ensuite `0x` devant le code hexadécimal. C'est une notation qui change la chaîne de caractères écrite en un code hexadécimal 😁
 
+Tu peux aussi utiliser la fonction `parseInt` et la méthode `.toString(16)` de JavaScript:
 ```js
-> parseInt("995b52", 16)
-> 10050386
+const hexadecimalBase = 16;
+
+const decimalNumber = parseInt('a49d33', hexadecimalBase); // 10788147
+decimalNumber.toString(hexadecimalBase); // 'a49d33'
+decimalNumber === 0xa49d33; // true
+decimalNumber === 10788147; // true
 ```
-
-Tu peux également utiliser [Blargbot](https://blargbot.xyz) et [son système de sous-tag](https://blargbot.xyz/tags#base) afin de transformer ton nombre dans la base de ton choix :
-
-<Image src='/img/discord/base-math.png' alt="Blargbot's {base} subtag" />
 :::
